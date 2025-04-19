@@ -1,0 +1,37 @@
+GROQ Chatbot using Streamlit & LangChain
+This is a lightweight conversational chatbot powered by GROQ LLMs, built using Streamlit, LangChain, and Python. The chatbot supports memory for contextual conversations and allows users to select from different GROQ models.
+Features
+• Conversational memory using LangChain's ConversationBufferWindowMemory
+• Selectable GROQ models (mistral-saba-24b, compound-beta)
+• Adjustable memory length via Streamlit sidebar
+• Easy-to-use web interface with real-time response display
+Requirements
+Install the required packages using pip:
+pip install -r requirements.txt
+Contents of requirements.txt:
+- streamlit
+- langchain
+- langchain_groq
+- python-dotenv
+API Key Setup
+Create a .env file in the root directory of your project and add your GROQ API key:
+GROQ_API_KEY=your_groq_api_key_here
+Running the App
+To launch the chatbot:
+streamlit run app.py
+Make sure your script is named app.py or update the command accordingly.
+Project Structure
+
+.
+??? app.py            # Main Streamlit application
+??? .env              # Environment file with GROQ API key
+??? requirements.txt  # Python dependencies
+??? README.md         # Project documentation
+
+Notes
+• You can extend the chatbot by adding support for more models, custom prompts, or saving chat logs to a database.
+• The memory length (k) determines how many recent interactions are remembered to provide context.
+Contributions
+Feel free to fork this repo, submit issues, or open pull requests!
+License
+MIT License
